@@ -1,0 +1,16 @@
+/*CommonJS 모듈을 사용하면 기존 Node.js 라이브러리 및 프레임워크와 더 쉽게 통합할 수 있습니다. */
+{
+  "compilerOptions": {
+    "module":"CommonJS",
+    "target": "ES2016", //async/await, 구조 분해, 확산 구문 등과 같은 기능이 포함
+    "noImplicitAny": true, //암시적 "any" 유형의 사용을 허용하지 않음으로써 보다 엄격한 유형 검사를 시행하는 데 도움
+    "removeComments": true, //컴파일된 코드에는 필요없는 주석은 사라진다.
+    "strict": true,
+    "esModuleInterop": true, // CommonJS 모듈에서 기본 내보내기를 가져올 수 있습니다.
+    "skipLibCheck": true, // 이 옵션을 true로 설정하면 TypeScript는 유형 검사 선언 파일(*.d.ts)을 건너뜁니다.
+    "forceConsistentCasingInFileNames": true,
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "baseUrl": "."
+  }
+}
